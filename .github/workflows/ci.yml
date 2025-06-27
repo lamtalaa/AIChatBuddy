@@ -21,7 +21,7 @@ jobs:
       run: echo "${{ secrets.GOOGLE_PLIST_BASE64 }}" | base64 --decode > AIChatBuddy/Resources/GoogleService-Info.plist
 
     - name: Install dependencies (SPM)
-      run: xcodebuild -resolvePackageDependencies -project AIChatBuddy.xcodeproj -verbose
+      run: xcodebuild -resolvePackageDependencies -project AIChatBuddy.xcodeproj
 
     - name: Run tests
       run: |
