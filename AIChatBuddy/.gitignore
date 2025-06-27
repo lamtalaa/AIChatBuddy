@@ -1,0 +1,9 @@
+//
+//  .gitignore
+//  AIChatBuddy
+//
+//  Created by Yassine Lamtalaa on 6/6/25.
+//
+
+**/Secrets.plist
+**/GoogleService-Info.plist

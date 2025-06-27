@@ -1,0 +1,674 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8C9B03432DFE57A4002D5DDD /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 8C9B03422DFE57A4002D5DDD /* FirebaseAuth */; };
+		8C9B03452DFE57A4002D5DDD /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 8C9B03442DFE57A4002D5DDD /* FirebaseCore */; };
+		8CD3DD4A2DFF4D8500B29F0B /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 8CD3DD492DFF4D8500B29F0B /* FirebaseFirestore */; };
+		8CD3DE0A2DFF8F9F00B29F0B /* OpenAIService in Frameworks */ = {isa = PBXBuildFile; productRef = 8CD3DE092DFF8F9F00B29F0B /* OpenAIService */; };
+		8CD3DECF2E0047DC00B29F0B /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 8CD3DECE2E0047DC00B29F0B /* GoogleSignIn */; };
+		8CD3DED12E0047DC00B29F0B /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 8CD3DED02E0047DC00B29F0B /* GoogleSignInSwift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8CE46B1D2DE802A500D77358 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8CE46B072DE802A300D77358 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8CE46B0E2DE802A300D77358;
+			remoteInfo = AIChatApp;
+		};
+		8CE46B272DE802A500D77358 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8CE46B072DE802A300D77358 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8CE46B0E2DE802A300D77358;
+			remoteInfo = AIChatApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8CE46B0F2DE802A300D77358 /* AIChatBuddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AIChatBuddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CE46B1C2DE802A500D77358 /* AIChatBuddyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AIChatBuddyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CE46B262DE802A500D77358 /* AIChatBuddyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AIChatBuddyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		8CD3DECC2E00477A00B29F0B /* Exceptions for "AIChatBuddy" folder in "AIChatBuddy" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 8CE46B0E2DE802A300D77358 /* AIChatBuddy */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		8CE46B112DE802A300D77358 /* AIChatBuddy */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				8CD3DECC2E00477A00B29F0B /* Exceptions for "AIChatBuddy" folder in "AIChatBuddy" target */,
+			);
+			path = AIChatBuddy;
+			sourceTree = "<group>";
+		};
+		8CE46B1F2DE802A500D77358 /* AIChatBuddyTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = AIChatBuddyTests;
+			sourceTree = "<group>";
+		};
+		8CE46B292DE802A500D77358 /* AIChatBuddyUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = AIChatBuddyUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8CE46B0C2DE802A300D77358 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CD3DECF2E0047DC00B29F0B /* GoogleSignIn in Frameworks */,
+				8C9B03432DFE57A4002D5DDD /* FirebaseAuth in Frameworks */,
+				8C9B03452DFE57A4002D5DDD /* FirebaseCore in Frameworks */,
+				8CD3DED12E0047DC00B29F0B /* GoogleSignInSwift in Frameworks */,
+				8CD3DE0A2DFF8F9F00B29F0B /* OpenAIService in Frameworks */,
+				8CD3DD4A2DFF4D8500B29F0B /* FirebaseFirestore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CE46B192DE802A500D77358 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CE46B232DE802A500D77358 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8C4F88932DF20F9C00A54601 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8CE46B062DE802A300D77358 = {
+			isa = PBXGroup;
+			children = (
+				8CE46B112DE802A300D77358 /* AIChatBuddy */,
+				8CE46B1F2DE802A500D77358 /* AIChatBuddyTests */,
+				8CE46B292DE802A500D77358 /* AIChatBuddyUITests */,
+				8C4F88932DF20F9C00A54601 /* Frameworks */,
+				8CE46B102DE802A300D77358 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8CE46B102DE802A300D77358 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8CE46B0F2DE802A300D77358 /* AIChatBuddy.app */,
+				8CE46B1C2DE802A500D77358 /* AIChatBuddyTests.xctest */,
+				8CE46B262DE802A500D77358 /* AIChatBuddyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8CE46B0E2DE802A300D77358 /* AIChatBuddy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8CE46B302DE802A500D77358 /* Build configuration list for PBXNativeTarget "AIChatBuddy" */;
+			buildPhases = (
+				8CE46B0B2DE802A300D77358 /* Sources */,
+				8CE46B0C2DE802A300D77358 /* Frameworks */,
+				8CE46B0D2DE802A300D77358 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				8CE46B112DE802A300D77358 /* AIChatBuddy */,
+			);
+			name = AIChatBuddy;
+			packageProductDependencies = (
+				8C9B03422DFE57A4002D5DDD /* FirebaseAuth */,
+				8C9B03442DFE57A4002D5DDD /* FirebaseCore */,
+				8CD3DD492DFF4D8500B29F0B /* FirebaseFirestore */,
+				8CD3DE092DFF8F9F00B29F0B /* OpenAIService */,
+				8CD3DECE2E0047DC00B29F0B /* GoogleSignIn */,
+				8CD3DED02E0047DC00B29F0B /* GoogleSignInSwift */,
+			);
+			productName = AIChatApp;
+			productReference = 8CE46B0F2DE802A300D77358 /* AIChatBuddy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8CE46B1B2DE802A500D77358 /* AIChatBuddyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8CE46B332DE802A500D77358 /* Build configuration list for PBXNativeTarget "AIChatBuddyTests" */;
+			buildPhases = (
+				8CE46B182DE802A500D77358 /* Sources */,
+				8CE46B192DE802A500D77358 /* Frameworks */,
+				8CE46B1A2DE802A500D77358 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8CE46B1E2DE802A500D77358 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				8CE46B1F2DE802A500D77358 /* AIChatBuddyTests */,
+			);
+			name = AIChatBuddyTests;
+			packageProductDependencies = (
+			);
+			productName = AIChatAppTests;
+			productReference = 8CE46B1C2DE802A500D77358 /* AIChatBuddyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8CE46B252DE802A500D77358 /* AIChatBuddyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8CE46B362DE802A500D77358 /* Build configuration list for PBXNativeTarget "AIChatBuddyUITests" */;
+			buildPhases = (
+				8CE46B222DE802A500D77358 /* Sources */,
+				8CE46B232DE802A500D77358 /* Frameworks */,
+				8CE46B242DE802A500D77358 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8CE46B282DE802A500D77358 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				8CE46B292DE802A500D77358 /* AIChatBuddyUITests */,
+			);
+			name = AIChatBuddyUITests;
+			packageProductDependencies = (
+			);
+			productName = AIChatAppUITests;
+			productReference = 8CE46B262DE802A500D77358 /* AIChatBuddyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8CE46B072DE802A300D77358 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1630;
+				LastUpgradeCheck = 1630;
+				TargetAttributes = {
+					8CE46B0E2DE802A300D77358 = {
+						CreatedOnToolsVersion = 16.3;
+					};
+					8CE46B1B2DE802A500D77358 = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = 8CE46B0E2DE802A300D77358;
+					};
+					8CE46B252DE802A500D77358 = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = 8CE46B0E2DE802A300D77358;
+					};
+				};
+			};
+			buildConfigurationList = 8CE46B0A2DE802A300D77358 /* Build configuration list for PBXProject "AIChatBuddy" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8CE46B062DE802A300D77358;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				8C9B03412DFE57A4002D5DDD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				8CD3DE082DFF8F9F00B29F0B /* XCRemoteSwiftPackageReference "OpenAIService" */,
+				8CD3DECD2E0047DC00B29F0B /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 8CE46B102DE802A300D77358 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8CE46B0E2DE802A300D77358 /* AIChatBuddy */,
+				8CE46B1B2DE802A500D77358 /* AIChatBuddyTests */,
+				8CE46B252DE802A500D77358 /* AIChatBuddyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8CE46B0D2DE802A300D77358 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CE46B1A2DE802A500D77358 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CE46B242DE802A500D77358 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8CE46B0B2DE802A300D77358 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CE46B182DE802A500D77358 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CE46B222DE802A500D77358 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8CE46B1E2DE802A500D77358 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8CE46B0E2DE802A300D77358 /* AIChatBuddy */;
+			targetProxy = 8CE46B1D2DE802A500D77358 /* PBXContainerItemProxy */;
+		};
+		8CE46B282DE802A500D77358 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8CE46B0E2DE802A300D77358 /* AIChatBuddy */;
+			targetProxy = 8CE46B272DE802A500D77358 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		8CE46B2E2DE802A500D77358 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8CE46B2F2DE802A500D77358 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8CE46B312DE802A500D77358 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9YG8Q7GPBK;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AIChatBuddy/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = AIChatBuddy;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lamtalaa.AIChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8CE46B322DE802A500D77358 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9YG8Q7GPBK;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AIChatBuddy/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = AIChatBuddy;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lamtalaa.AIChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8CE46B342DE802A500D77358 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lamtalaa.AIChatAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AIChatBuddy.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AIChatBuddy";
+			};
+			name = Debug;
+		};
+		8CE46B352DE802A500D77358 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lamtalaa.AIChatAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AIChatBuddy.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AIChatBuddy";
+			};
+			name = Release;
+		};
+		8CE46B372DE802A500D77358 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lamtalaa.AIChatAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AIChatApp;
+			};
+			name = Debug;
+		};
+		8CE46B382DE802A500D77358 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lamtalaa.AIChatAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AIChatApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8CE46B0A2DE802A300D77358 /* Build configuration list for PBXProject "AIChatBuddy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CE46B2E2DE802A500D77358 /* Debug */,
+				8CE46B2F2DE802A500D77358 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8CE46B302DE802A500D77358 /* Build configuration list for PBXNativeTarget "AIChatBuddy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CE46B312DE802A500D77358 /* Debug */,
+				8CE46B322DE802A500D77358 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8CE46B332DE802A500D77358 /* Build configuration list for PBXNativeTarget "AIChatBuddyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CE46B342DE802A500D77358 /* Debug */,
+				8CE46B352DE802A500D77358 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8CE46B362DE802A500D77358 /* Build configuration list for PBXNativeTarget "AIChatBuddyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CE46B372DE802A500D77358 /* Debug */,
+				8CE46B382DE802A500D77358 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8C9B03412DFE57A4002D5DDD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.14.0;
+			};
+		};
+		8CD3DE082DFF8F9F00B29F0B /* XCRemoteSwiftPackageReference "OpenAIService" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/lamtalaa/OpenAIService.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		8CD3DECD2E0047DC00B29F0B /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8C9B03422DFE57A4002D5DDD /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8C9B03412DFE57A4002D5DDD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		8C9B03442DFE57A4002D5DDD /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8C9B03412DFE57A4002D5DDD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		8CD3DD492DFF4D8500B29F0B /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8C9B03412DFE57A4002D5DDD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		8CD3DE092DFF8F9F00B29F0B /* OpenAIService */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8CD3DE082DFF8F9F00B29F0B /* XCRemoteSwiftPackageReference "OpenAIService" */;
+			productName = OpenAIService;
+		};
+		8CD3DECE2E0047DC00B29F0B /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8CD3DECD2E0047DC00B29F0B /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		8CD3DED02E0047DC00B29F0B /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8CD3DECD2E0047DC00B29F0B /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 8CE46B072DE802A300D77358 /* Project object */;
+}
