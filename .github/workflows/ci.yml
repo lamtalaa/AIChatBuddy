@@ -22,7 +22,7 @@ jobs:
            echo "${{ secrets.SECRETS_PLIST_BASE64 }}" | base64 --decode > AIChatBuddy/Resources/Secrets.plist
 
     - name: Install dependencies (SPM)
-      run: xcodebuild -resolvePackageDependencies -project AIChatBuddy.xcodeproj
+      run: xcodebuild -resolvePackageDependencies -project AIChatBuddy.xcodeproj -verbose
 
     - name: Run tests
       run: |
