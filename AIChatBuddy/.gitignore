@@ -7,3 +7,4 @@
 
 **/Secrets.plist
 **/GoogleService-Info.plist
+*.xcworkspace
