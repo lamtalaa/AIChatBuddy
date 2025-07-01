@@ -17,7 +17,7 @@ jobs:
     - name: Set Xcode version
       uses: maxim-lobanov/setup-xcode@v1
       with:
-        xcode-version: '16.0'
+        xcode-version: '15.0'
 
     - name: Decode GoogleService-Info.plist
       run: echo "${{ secrets.GOOGLE_PLIST_BASE64 }}" | base64 --decode > AIChatBuddy/Resources/GoogleService-Info.plist
